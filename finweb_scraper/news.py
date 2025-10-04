@@ -1,7 +1,7 @@
 import os, json, requests, sys
 from tqdm import tqdm
 from dotenv import load_dotenv
-from utils.urlmining import fetchUrl, soupArticlesHtml
+from utils import fetchUrl, soupArticlesHtml
 
 COLUMN_NUMBERS = 100
 
@@ -44,8 +44,6 @@ if __name__ == '__main__':
     
     tqdm.write('\nSouping articles...')
     articlesSoup = [soupArticlesHtml(article) for article  in tqdm(articles, ncols=COLUMN_NUMBERS)]
-
-    del articles # ! free memory
 
     with open('out/articles.json', 'w') as file:
         json.dump(articlesSoup, file, indent=4, ensure_ascii=False)
