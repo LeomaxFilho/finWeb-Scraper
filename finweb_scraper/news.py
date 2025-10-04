@@ -28,7 +28,7 @@ if __name__ == '__main__':
         print(f'\033[91m error: {ex}\033[0m')
         sys.exit()
     
-    with open('out/out.json', 'w') as file:
+    with open('../out/out.json', 'w') as file:
         json.dump(apiData, file, indent=4, ensure_ascii=False)
 
     try:
@@ -43,7 +43,7 @@ if __name__ == '__main__':
     tqdm.write('\nSouping articles...')
     articlesSoup = [soupArticlesHtml(article) for article  in tqdm(articles, ncols=COLUMN_NUMBERS)]
 
-    with open('out/articles.json', 'w') as file:
+    with open('../out/articles.json', 'w') as file:
         json.dump(articlesSoup, file, indent=4, ensure_ascii=False)
     
     answerAI_json = []
@@ -63,5 +63,5 @@ if __name__ == '__main__':
             print(f'\033[91m error in AI API request: {ex}\033[0m')
             continue
     
-    with open('out/response.json', 'w') as file:
+    with open('../out/response.json', 'w') as file:
         json.dump(answerAI_json, file, indent=4, ensure_ascii=False)
