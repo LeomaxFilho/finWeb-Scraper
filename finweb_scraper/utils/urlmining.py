@@ -9,9 +9,11 @@ def fetchUrl(url: str) -> str:
         tqdm.write(f'\033[91m error: {url} - exception: {ex} \033[0m')
         return 'Error'
 
-    tqdm.write(f'\033[91m error: {url}\033[0m') if response.status_code != 200 else None
+    if response.status_code != 200:
+        tqdm.write(f'\033[91m error: {url}\033[0m')
+        return 'Error'
 
-    return response.text if response.status_code == 200 else 'Error'
+    return response.text
 
 def soupArticlesHtml (article: str) -> str:
     soup = BeautifulSoup(article, 'html.parser')

@@ -1,4 +1,4 @@
 #import fetchurl 
-from utils.urlmining import fetchUrl
+from urlmining import fetchUrl
 #import soupArticlesHtml
-from utils.urlmining import soupArticlesHtml
+from urlmining import soupArticlesHtml

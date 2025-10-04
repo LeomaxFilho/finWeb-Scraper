@@ -25,19 +25,17 @@ if __name__ == '__main__':
         response.raise_for_status()
         apiData = response.json()
     except Exception as ex:
-        print(f'\033[91m error: {ex}')
+        print(f'\033[91m error: {ex}\033[0m')
         sys.exit()
     
     with open('out/out.json', 'w') as file:
         json.dump(apiData, file, indent=4, ensure_ascii=False)
 
-    with open('out/out.json', 'r') as file:
-        apiData=json.load(file)
-        try:
-            jsonArticles = apiData['articles']
-            urlList = [url['url'] for url in jsonArticles]
-        except Exception as ex:
-            print(f'\033[91m error: {ex}')
+    try:
+        jsonArticles = apiData['articles']
+        urlList = [url['url'] for url in jsonArticles]
+    except Exception as ex:
+        print(f'\033[91m error: {ex}\033[0m')
     
     tqdm.write('\nFetching...')
     articles = [fetchUrl(url) for url in tqdm(urlList, ncols=COLUMN_NUMBERS)]
@@ -48,7 +46,7 @@ if __name__ == '__main__':
     with open('out/articles.json', 'w') as file:
         json.dump(articlesSoup, file, indent=4, ensure_ascii=False)
     
-    answerAI = requests.Response()
+    answerAI_json = []
     for article in articlesSoup:
         aiParam = {
             "model": OLLA_MODEL,
@@ -57,7 +55,13 @@ if __name__ == '__main__':
             "stream": False
         }
         
-        answerAI = requests.post(url=URL_OLLAMA, json=aiParam)
+        try:
+            answerAI = requests.post(url=URL_OLLAMA, json=aiParam)
+            answerAI.raise_for_status()
+            answerAI_json.append( answerAI.json())
+        except Exception as ex:
+            print(f'\033[91m error in AI API request: {ex}\033[0m')
+            continue
     
-        with open('out/response.json', 'w') as file:
-            json.dump(answerAI.json(), file, indent=4, ensure_ascii=False)
+    with open('out/response.json', 'w') as file:
+        json.dump(answerAI_json, file, indent=4, ensure_ascii=False)
