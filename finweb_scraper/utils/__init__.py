@@ -17,7 +17,7 @@ Exemplo de uso:
 		texto = soupArticlesHtml(html)
 """
 
-#import fetch_Url
-from .urlmining import fetch_Url
-#import soup_Articles_Html
-from .urlmining import soup_Articles_Html
+#import fetch_url
+from .urlmining import fetch_url
+#import soup_articles_html
+from .urlmining import soup_articles_html

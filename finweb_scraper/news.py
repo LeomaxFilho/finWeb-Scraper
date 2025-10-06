@@ -15,7 +15,7 @@ import json
 import requests
 from tqdm import tqdm
 from dotenv import load_dotenv
-from .utils import fetch_Url, soup_Articles_Html
+from .utils import fetch_url, soup_articles_html
 
 COLUMN_NUMBERS = 100
 
@@ -59,10 +59,11 @@ if __name__ == '__main__':
         sys.exit()
 
     tqdm.write('\nFetching...')
-    articles = [fetch_Url(url) for url in tqdm(urlList, ncols=COLUMN_NUMBERS)]
+    articles = [fetch_url(url) for url in tqdm(urlList, ncols=COLUMN_NUMBERS)]
 
     tqdm.write('\nSouping articles...')
-    articlesSoup = [soup_Articles_Html(article) for article  in tqdm(articles, ncols=COLUMN_NUMBERS)]
+    articlesSoup = [soup_articles_html(article) for article  in tqdm(articles,
+                                                                    ncols=COLUMN_NUMBERS)]
 
     with open('../out/articles.json', 'w', encoding="utf-8") as file:
         json.dump(articlesSoup, file, indent=4, ensure_ascii=False)
