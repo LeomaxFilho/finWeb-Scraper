@@ -1,4 +1,6 @@
 # finWeb-Scraper
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FLeomaxFilho%2FfinWeb-Scraper.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FLeomaxFilho%2FfinWeb-Scraper?ref=badge_shield)
+
 
 ## What is this?
 
@@ -65,3 +67,5 @@ After a successful run you will find these files in the `out/` directory:
 ## License
 
 This project is provided as-is. Check the `LICENSE` file in the repository for the project's license.
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FLeomaxFilho%2FfinWeb-Scraper.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FLeomaxFilho%2FfinWeb-Scraper?ref=badge_large)
