@@ -1,12 +1,3 @@
-Mozilla Public Licence (MPL) v. 2.0 - Exhibit A
------------------------------------------------
-
-This Source Code Form is subject to the terms of the
-Mozilla Public License, v. 2.0.
-If a copy of the MPL was not distributed with this project,
-You can obtain one at https://mozilla.org/MPL/2.0/.
-
-
 MIT License
 
 Copyright (c) 2025 Leomax
@@ -28,3 +19,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Este projeto utiliza a biblioteca tqdm, que está licenciada sob a Mozilla Public License 2.0 (MPL-2.0).
+O código-fonte original pode ser obtido em: https://github.com/tqdm/tqdm
+Não foram realizadas modificações nos arquivos da biblioteca.
