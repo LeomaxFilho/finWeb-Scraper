@@ -38,7 +38,6 @@ Args:
 Returns:
     str: Conteúdo HTML da resposta em caso de sucesso, ou 'Error' em caso de falha.
 """
-
 def fetch_Url(url: str) -> str:
 
     try:

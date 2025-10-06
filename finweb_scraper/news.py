@@ -9,9 +9,9 @@ Uso:
 
 """
 
+import sys
 import os
 import json
-import sys
 import requests
 from tqdm import tqdm
 from dotenv import load_dotenv
@@ -72,8 +72,8 @@ if __name__ == '__main__':
         aiParam = {
             "model": OLLA_MODEL,
             "prompt": f"""Devolver o texto da notícia em primeiro lugar, mantendo todas as 
-            informações originais, sem modificar nenhuma vírgula, pontuação ou característica do 
-            original. Não fornecer resumo, análise ou interpretação alguma, também preste atenção na 
+            informações originais, sem modificar nenhuma vírgula ou característica do 
+            original. Não fornecer resumo, interpretação alguma, também preste atenção na 
             questão das propagandas, para retirar propagandas e a marca, 
             como VEJA, ABRIL, Olha Digital e por assim vai.
             Segue texto com o artigo: {article}""",
