@@ -1,4 +1,4 @@
-# finweb-scraper (v0.1.0)
+# finweb-scraper
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FLeomaxFilho%2FfinWeb-Scraper.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FLeomaxFilho%2FfinWeb-Scraper?ref=badge_shield)
 
 Stock Market web scraper — a lightweight pipeline to harvest news articles, clean the HTML, and optionally post-process text with a local Ollama instance.
