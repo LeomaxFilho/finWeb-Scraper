@@ -1,38 +1,61 @@
-# finWeb-Scraper
+# finweb-scraper (v0.1.0)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FLeomaxFilho%2FfinWeb-Scraper.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FLeomaxFilho%2FfinWeb-Scraper?ref=badge_shield)
 
+Stock Market web scraper — a lightweight pipeline to harvest news articles, clean the HTML, and optionally post-process text with a local Ollama instance.
 
-## What is this?
+## Summary
 
-finWeb-Scraper is a small Python utility to collect news article metadata from the NewsAPI, fetch each article's HTML, extract the article text using BeautifulSoup, and optionally send the cleaned article text to a local Ollama instance for further processing. The project produces JSON output files that store the raw API response, the cleaned article text, and (if used) the AI responses.
+This project queries NewsAPI for news about a topic, downloads the article HTML pages, extracts the article text using BeautifulSoup, and can forward the cleaned text to a local Ollama API for additional processing. It is intended as a simple, local-first scraper for building data pipelines around financial news.
 
-This repository is intended as a lightweight starting point for building pipelines that need to harvest news content and post-process it locally.
+## Project metadata
 
-## Features
+- Name: finweb-scraper
+- Version: 0.1.0
+- Description: Stock Market web scraper
+- Authors: LeomaxFilho <leomax.filho@gmail.com>
+- License: MIT
+- Python: >=3.11
 
-- Query NewsAPI for articles (the script uses the `everything` endpoint).
-- Download each article URL and extract readable text with BeautifulSoup.
-- Optional post-processing step that calls a local Ollama HTTP API to transform or clean the article text.
-- Progress reporting using `tqdm`.
+## Dependencies
 
-## Requirements
+The project declares the following runtime dependencies (as in `pyproject.toml`):
 
-- Python 3.9+ (recommended: 3.11)
-- The script depends on the following Python packages:
-  - requests
-  - beautifulsoup4
-  - python-dotenv
-  - tqdm
+- requests (>=2.32.5,<3.0.0)
+- tqdm (>=4.67.1,<5.0.0)
+- dotenv (>=0.9.9,<0.10.0)
+- beautifulsoup4 (>=4.14.2,<5.0.0)
+- aiohttp (>=3.13.0,<4.0.0)
 
-If you keep a `pyproject.toml` in the repository you can also use `pip install -e .` or any dependency management tool you prefer.
+For testing (optional):
 
-## Configuration / Environment variables
+- pytest (>=8.4.2,<9.0.0)
 
-The script reads configuration from environment variables. To make local development convenient, you can add a `.env` file at the project root with the following variables:
+## Installation
 
-- API_NEWSAPI: Your NewsAPI API key (required to query NewsAPI).
-- URL_OLLAMA: (optional) Local Ollama HTTP API URL (default used in the script: `http://localhost:11434/api/generate`).
-- OLLA_MODEL: (optional) Ollama model identifier to use when calling the local Ollama instance.
+Using pip (recommended, example with virtualenv):
+
+```zsh
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -e .
+```
+
+Using Poetry (if you prefer to manage with `pyproject.toml`):
+
+```zsh
+poetry install
+```
+
+Note: the pins above are examples matching the lower-bound versions in `pyproject.toml`; you can adjust them to the exact versions you prefer.
+
+## Configuration
+
+Create a `.env` file at the repository root or export these environment variables before running the script:
+
+- API_NEWSAPI — your NewsAPI API key (required to fetch articles)
+- URL_OLLAMA — (optional) local Ollama API URL (default in the script: `http://localhost:11434/api/generate`)
+- OLLA_MODEL — (optional) model id for Ollama (example: `llama3.2:latest`)
 
 Example `.env`:
 
@@ -42,11 +65,14 @@ URL_OLLAMA=http://localhost:11434/api/generate
 OLLA_MODEL=llama3.2:latest
 ```
 
-Note: The NewsAPI key is required to fetch the list of articles. The Ollama settings are optional — the script will attempt to call Ollama only if you have a local Ollama server running and the script is configured to do so.
+## Usage
 
-## How to run
+1. Ensure dependencies are installed and `.env` is configured.
+2. Create the `out/` directory where the script writes JSON files:
 
-1. Ensure you have the dependencies installed and the `.env` file created (or environment variables exported).
+```zsh
+mkdir -p out
+```
 
 3. Run the main script:
 
@@ -54,18 +80,23 @@ Note: The NewsAPI key is required to fetch the list of articles. The Ollama sett
 python finweb_scraper/news.py
 ```
 
-The script currently uses a hard-coded query parameter (`'q': 'Petrobras'`) and language `'pt'` in the main block. Modify `finweb_scraper/news.py` if you want to change the default query or other parameters.
+The script's default query in `finweb_scraper/news.py` is currently set to fetch articles about `Petrobras` and uses language `pt`. Edit the script to change the query or adapt it to accept command-line arguments.
 
-## What the script writes
+## Output
 
-After a successful run you will find these files in the `out/` directory:
+The script writes JSON output files to the `out/` directory:
 
-- `out.json` — The full JSON response returned by NewsAPI.
-- `articles.json` — An array of the extracted article texts (HTML fetched and cleaned with BeautifulSoup).
-- `response.json` — If the Ollama API is called, this will contain the JSON responses from the Ollama model for each article.
+- `out.json` — raw JSON response from NewsAPI
+- `articles.json` — list of cleaned article text (HTML fetched and cleaned)
+- `response.json` — JSON responses from the Ollama API (if called)
 
+## Development
+
+- Code lives under `finweb_scraper/`. Key files:
+  - `finweb_scraper/news.py` — main scraper script
+  - `finweb_scraper/utils/async_requests.py` — asynchronous fetching and HTML-to-text helpers
 ## License
 
-This project is provided as-is. Check the `LICENSE` file in the repository for the project's license.
+This project is licensed under the MIT License — see `LICENSE` for details.
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FLeomaxFilho%2FfinWeb-Scraper.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FLeomaxFilho%2FfinWeb-Scraper?ref=badge_large)
