@@ -98,16 +98,20 @@ async def fetch_url(url: str) -> str:
                 response = await request.text()
 
         except aiohttp.ClientResponseError as ex:
-            print(f"\033[91m Response Error URL: {ex}\033[0m")
-            return "Error"
+            tqdm.write(f'\033[91m Response Error URL: {ex}\033[0m')
+            return 'Error'
 
         except aiohttp.InvalidURL as ex:
-            print(f"\033[91m Invalid URL: {ex}\033[0m")
-            return "Error"
+            tqdm.write(f'\033[91m Invalid URL: {ex}\033[0m')
+            return 'Error'
+
+        except aiohttp.ConnectionTimeoutError as ex:
+            tqdm.write(f'\033[91m Timeout Error: {ex}\033[0m')
+            return 'Error'
 
         except aiohttp.ClientError as ex:
-            print(f"\033[91m Client Error: {ex}\033[0m")
-            return "Error"
+            tqdm.write(f'\033[91m Client Error: {ex}\033[0m')
+            return 'Error'
 
     return response
 
@@ -158,6 +162,8 @@ async def soup_articles_html(article: str) -> str:
         >>> print(text)
         'Hithere'
     """
-    soup = BeautifulSoup(article, "html.parser")
-    soup_without_blank_lines = "".join(soup.text.splitlines())
+
+    soup = BeautifulSoup(article, 'html.parser')
+    soup_without_blank_lines = ''.join(soup.text.splitlines())
+
     return soup_without_blank_lines

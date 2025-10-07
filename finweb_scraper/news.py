@@ -18,19 +18,19 @@ from finweb_scraper.utils.async_requests import soup_articles_fetch, articles_fe
 
 COLUMN_NUMBERS = 100
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     load_dotenv()
 
-    API_NEWSAPI = os.getenv("API_NEWSAPI")
-    URL_NEWSAPI = "https://newsapi.org/v2/everything"
-    URL_OLLAMA = "http://localhost:11434/api/generate"
-    OLLA_MODEL = "llama3.2:latest"
+    API_NEWSAPI = os.getenv('API_NEWSAPI')
+    URL_NEWSAPI = 'https://newsapi.org/v2/everything'
+    URL_OLLAMA = 'http://localhost:11434/api/generate'
+    OLLA_MODEL = 'llama3.2:latest'
 
     paramNewsAPI = {
-        "apiKey": API_NEWSAPI,
-        "q": "Petrobras",
-        "searchIn": "title,content",
-        "language": "pt",
+        'apiKey': API_NEWSAPI,
+        'q': 'Petrobras',
+        'searchIn': 'title,content',
+        'language': 'pt',
     }
 
     try:
@@ -39,31 +39,32 @@ if __name__ == "__main__":
         apiData = response.json()
 
     except requests.exceptions.HTTPError as ex:
-        print(f"\033[91m error: {ex}\033[0m")
+        print(f'\033[91m error: {ex}\033[0m')
         sys.exit()
     except requests.exceptions.ConnectionError as ex:
-        print(f"\033[91m error: {ex}\033[0m")
+        print(f'\033[91m error: {ex}\033[0m')
         sys.exit()
 
-    with open("../out/out.json", "w", encoding="utf-8") as file:
+    with open('../out/out.json', 'w', encoding='utf-8') as file:
         json.dump(apiData, file, indent=4, ensure_ascii=False)
 
     try:
-        jsonArticles = apiData["articles"]
-        urlList = [url["url"] for url in jsonArticles]
+        jsonArticles = apiData['articles']
+        urlList = [url['url'] for url in jsonArticles]
     except requests.exceptions.HTTPError as ex:
-        print(f"\033[91m error: {ex}\033[0m")
+        print(f'\033[91m error: {ex}\033[0m')
         sys.exit()
     except requests.exceptions.ConnectionError as ex:
-        print(f"\033[91m error: {ex}\033[0m")
+        print(f'\033[91m error: {ex}\033[0m')
         sys.exit()
 
+    tqdm.write('\nFethcing urls')
     articles = asyncio.run(articles_fetch(urlList))
 
-    tqdm.write("\nSouping articles...")
+    tqdm.write('\nSouping articles')
     articlesSoup = asyncio.run(soup_articles_fetch(articles))
 
-    with open("../out/articles.json", "w", encoding="utf-8") as file:
+    with open('../out/articles.json', 'w', encoding='utf-8') as file:
         json.dump(articlesSoup, file, indent=4, ensure_ascii=False)
 
 # answerAI_json = []

@@ -1,6 +1,6 @@
 {
     "status": "ok",
-    "totalResults": 334,
+    "totalResults": 347,
     "articles": [
         {
             "source": {
@@ -229,12 +229,12 @@
                 "name": "Terra.com.br"
             },
             "author": "Reuters",
-            "title": "Petrobras eleva preço do querosene de aviação em 0,2%",
-            "description": "A Petrobras informou que o preço médio de venda de querosene de aviação (QAV) da empresa para as ...",
-            "url": "https://www.terra.com.br/economia/petrobras-eleva-preco-do-querosene-de-aviacao-em-02,a83cd5a75e9d295d9e55c4b670c688eddt559ke5.html",
+            "title": "Ibovespa titubeia após máximas; BB e Petrobras sobem",
+            "description": "O Ibovespa tinha oscilações modestas nesta quarta-feira, após renovar máximas na véspera, com o ...",
+            "url": "https://www.terra.com.br/economia/ibovespa-titubeia-apos-maximas-bb-e-petrobras-sobem,8604f7cd1d6e7777c906f702791ca37051pkt9v2.html",
             "urlToImage": "https://s1.trrsf.com/update-1698692222/fe/zaz-mod-t360-icons/svg/logos/terra-16x9-borda.png",
-            "publishedAt": "2025-10-01T13:16:59Z",
-            "content": "A Petrobras informou que o preço médio de venda de querosene de aviação (QAV) da empresa para as distribuidoras registrará um aumento de 0,2% a partir desta quarta-feira, segundo comunicado referente… [+526 chars]"
+            "publishedAt": "2025-09-24T14:43:02Z",
+            "content": "O Ibovespa tinha oscilações modestas nesta quarta-feira, após renovar máximas na véspera, com o efeito de movimentos de realização de lucros sendo contrabalançados pelo avanço das ações da Petrobras,… [+2946 chars]"
         },
         {
             "source": {
@@ -242,12 +242,12 @@
                 "name": "Terra.com.br"
             },
             "author": "Reuters",
-            "title": "Ibovespa titubeia após máximas; BB e Petrobras sobem",
-            "description": "O Ibovespa tinha oscilações modestas nesta quarta-feira, após renovar máximas na véspera, com o ...",
-            "url": "https://www.terra.com.br/economia/ibovespa-titubeia-apos-maximas-bb-e-petrobras-sobem,8604f7cd1d6e7777c906f702791ca37051pkt9v2.html",
+            "title": "Petrobras eleva preço do querosene de aviação em 0,2%",
+            "description": "A Petrobras informou que o preço médio de venda de querosene de aviação (QAV) da empresa para as ...",
+            "url": "https://www.terra.com.br/economia/petrobras-eleva-preco-do-querosene-de-aviacao-em-02,a83cd5a75e9d295d9e55c4b670c688eddt559ke5.html",
             "urlToImage": "https://s1.trrsf.com/update-1698692222/fe/zaz-mod-t360-icons/svg/logos/terra-16x9-borda.png",
-            "publishedAt": "2025-09-24T14:43:02Z",
-            "content": "O Ibovespa tinha oscilações modestas nesta quarta-feira, após renovar máximas na véspera, com o efeito de movimentos de realização de lucros sendo contrabalançados pelo avanço das ações da Petrobras,… [+2946 chars]"
+            "publishedAt": "2025-10-01T13:16:59Z",
+            "content": "A Petrobras informou que o preço médio de venda de querosene de aviação (QAV) da empresa para as distribuidoras registrará um aumento de 0,2% a partir desta quarta-feira, segundo comunicado referente… [+526 chars]"
         },
         {
             "source": {
@@ -294,19 +294,6 @@
                 "name": "Terra.com.br"
             },
             "author": "Reuters",
-            "title": "Petrobras e Elea Digital fecham contrato de R$2,3 bi para serviços de datacenter",
-            "description": "A Elea Digital informou nesta terça-feira que assinou um contrato no valor de R$2,3 bilhões com ...",
-            "url": "https://www.terra.com.br/economia/petrobras-e-elea-digital-fecham-contrato-de-r23-bi-para-servicos-de-datacenter,d45f9bb15e98dae0620f87b1bd986f5bgqxxnv37.html",
-            "urlToImage": "https://s1.trrsf.com/update-1698692222/fe/zaz-mod-t360-icons/svg/logos/terra-16x9-borda.png",
-            "publishedAt": "2025-10-01T00:10:37Z",
-            "content": "A Elea Digital informou nesta terça-feira que assinou um contrato no valor de R$2,3 bilhões com a Petrobras para a prestação de serviços de \"datacenter colocation para hospedagem de equipamentos, apl… [+311 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Terra.com.br"
-            },
-            "author": "Reuters",
             "title": "Petrobras abrirá propostas para plataformas de projeto em Sergipe em 15 de outubro",
             "description": "A Petrobras deverá abrir as propostas em concorrência para a contratação de duas plataformas ...",
             "url": "https://www.terra.com.br/economia/petrobras-abrira-propostas-para-plataformas-de-projeto-em-sergipe-em-15-de-outubro,380bebb1b538394040cdcbbb4b0e50fcjq42suo1.html",
@@ -320,12 +307,51 @@
                 "name": "Terra.com.br"
             },
             "author": "Reuters",
+            "title": "Petrobras e Elea Digital fecham contrato de R$2,3 bi para serviços de datacenter",
+            "description": "A Elea Digital informou nesta terça-feira que assinou um contrato no valor de R$2,3 bilhões com ...",
+            "url": "https://www.terra.com.br/economia/petrobras-e-elea-digital-fecham-contrato-de-r23-bi-para-servicos-de-datacenter,d45f9bb15e98dae0620f87b1bd986f5bgqxxnv37.html",
+            "urlToImage": "https://s1.trrsf.com/update-1698692222/fe/zaz-mod-t360-icons/svg/logos/terra-16x9-borda.png",
+            "publishedAt": "2025-10-01T00:10:37Z",
+            "content": "A Elea Digital informou nesta terça-feira que assinou um contrato no valor de R$2,3 bilhões com a Petrobras para a prestação de serviços de \"datacenter colocation para hospedagem de equipamentos, apl… [+311 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Terra.com.br"
+            },
+            "author": "Porto Alegre 24 horas",
+            "title": "Petrobras abre mais de 30 vagas para jovem aprendiz em Canoas",
+            "description": "Começam nesta segunda-feira (6) as inscrições para o Programa Petrobras Jovem Aprendiz em ...",
+            "url": "https://www.terra.com.br/noticias/petrobras-abre-mais-de-30-vagas-para-jovem-aprendiz-em-canoas,0bcbf29b26d16d9c315bd378c29f12262969ocyn.html",
+            "urlToImage": "https://s1.trrsf.com/update-1698692222/fe/zaz-mod-t360-icons/svg/logos/terra-16x9-borda.png",
+            "publishedAt": "2025-10-07T11:50:12Z",
+            "content": "Começam nesta segunda-feira (6) as inscrições para o Programa Petrobras Jovem Aprendiz em Canoas, na Região Metropolitana de Porto Alegre. Ao todo, são 32 vagas disponíveis nas áreas de Técnico de Au… [+955 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Terra.com.br"
+            },
+            "author": "Reuters",
             "title": "Ibovespa tem variação modesta com suporte de Petrobras, mas queda de Vale e tombo de Braskem",
             "description": "O Ibovespa tinha oscilação modesta nesta sexta-feira, com as ações da Petrobras entre os ...",
             "url": "https://www.terra.com.br/economia/ibovespa-tem-variacao-modesta-com-suporte-de-petrobras-mas-queda-de-vale-e-tombo-de-braskem,24138d4a500cc6ac259922171fd6db057n1lwk19.html",
             "urlToImage": "https://s1.trrsf.com/update-1698692222/fe/zaz-mod-t360-icons/svg/logos/terra-16x9-borda.png",
             "publishedAt": "2025-09-26T14:43:39Z",
             "content": "O Ibovespa tinha oscilação modesta nesta sexta-feira, com as ações da Petrobras entre os principais suportes, enquanto Vale recuava e Braskem afundava mais de 10% após anunciar que contratou assessor… [+2854 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Terra.com.br"
+            },
+            "author": "Estadão Conteúdo",
+            "title": "Margem Equatorial: Petrobras e Imar lideram projeto de IA para mapear ecossistema da foz do Amazonas",
+            "description": "Na fase de mapeamento do ambiente, a Petrobras, à espera de licença para exploração na região, prevê 54 estações de coleta para a malha regional e seis estações para avaliação do local",
+            "url": "https://www.terra.com.br/economia/margem-equatorial-petrobras-e-imar-lideram-projeto-de-ia-para-mapear-ecossistema-da-foz-do-amazonas,de9df7466e7c6b697b4ace53d7e3e95etz32patf.html",
+            "urlToImage": "https://p2.trrsf.com/image/fget/cf/1200/630/middle/images.terra.com/2025/10/06/1058089807-g6bl7ftwgroq5ebbtdwpzybide.jpg",
+            "publishedAt": "2025-10-06T21:42:28Z",
+            "content": "RIO - No aguardo de uma possível liberação para o início da exploração do primeiro poço na Bacia da Foz do Amazonas, na chamada Margem Equatorial, a Petrobras já se movimenta para mapear a vida coste… [+3190 chars]"
         },
         {
             "source": {
@@ -449,6 +475,19 @@
                 "id": null,
                 "name": "Terra.com.br"
             },
+            "author": "Monitor do Mercado",
+            "title": "Bolsa recua de olho no Fed: o que pode mexer com o mercado",
+            "description": "A semana começou agitada na Bolsa com foco no encontro entre Luiz Inácio Lula da Silva e Donald Trump. O Ibovespa, principal índice doméstico, caiu 0,41%",
+            "url": "https://www.terra.com.br/economia/bolsa-recua-de-olho-no-fed-o-que-pode-mexer-com-o-mercado,1020d94f64d97357d792bc24d25fa133dfs0ks8t.html",
+            "urlToImage": "https://p2.trrsf.com/image/fget/cf/1200/630/middle/images.terra.com/2025/10/07/raphael-bostic-t4yi8y6zzfqc.jpg",
+            "publishedAt": "2025-10-07T13:25:18Z",
+            "content": "ResumoCom a agenda esvaziada, investidores estão atentos aos discursos de três dirigentes do Federal Reserve nesta terça (7): Raphael Bostic, Michelle Bowman e Neel Kashkari. \r\nA semana começou agita… [+2109 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Terra.com.br"
+            },
             "author": "Estadão Conteúdo",
             "title": "Dois presos pela PF na Operação Rejeito foram indicados pelo ministro de Minas e Energia",
             "description": "O ministro de Minas e Energia, Alexandre Silveira (PSD), indicou para a Agência Nacional de ...",
@@ -514,19 +553,6 @@
                 "id": null,
                 "name": "Terra.com.br"
             },
-            "author": "Reuters",
-            "title": "Ibovespa titubeia após máximas e com ameaça dos EUA no radar",
-            "description": "O Ibovespa hesitava nesta sexta-feira refletindo movimentos de realização de lucros, após ...",
-            "url": "https://www.terra.com.br/economia/ibovespa-titubeia-apos-maximas-e-com-ameaca-dos-eua-no-radar,f66d40f1e7f452b94d5cf6dc348b7b51uui4008w.html",
-            "urlToImage": "https://s1.trrsf.com/update-1698692222/fe/zaz-mod-t360-icons/svg/logos/terra-16x9-borda.png",
-            "publishedAt": "2025-09-12T14:21:01Z",
-            "content": "O Ibovespa hesitava nesta sexta-feira refletindo movimentos de realização de lucros, após renovar máximas na véspera, e uma certa cautela à declaração do secretário de Estado dos Estados Unidos de qu… [+3011 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Terra.com.br"
-            },
             "author": "Estadão Conteúdo",
             "title": "Rodopetro, citada na Operação Carbono Oculto, entra em recuperação judicial",
             "description": "Empresa alega que práticas anticoncorrenciais da Petrobras e exigências fiscais do Estado de São Paulo inviabilizaram suas operações, levando à crise financeira",
@@ -534,6 +560,19 @@
             "urlToImage": "https://p2.trrsf.com/image/fget/cf/1200/630/middle/images.terra.com/2025/09/11/1716071541-avdh4naknveljhckvnxgrdpadm.jpg",
             "publishedAt": "2025-09-11T22:38:08Z",
             "content": "A Rodopetro Distribuidora de Petróleo entrou em recuperação judicial nesta quinta-feira, 11. A empresa ingressou com o pedido na 3ª Vara Empresarial da Comarca da Capital do Rio de Janeiro, em ação d… [+1380 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Terra.com.br"
+            },
+            "author": "Reuters",
+            "title": "Ibovespa titubeia após máximas e com ameaça dos EUA no radar",
+            "description": "O Ibovespa hesitava nesta sexta-feira refletindo movimentos de realização de lucros, após ...",
+            "url": "https://www.terra.com.br/economia/ibovespa-titubeia-apos-maximas-e-com-ameaca-dos-eua-no-radar,f66d40f1e7f452b94d5cf6dc348b7b51uui4008w.html",
+            "urlToImage": "https://s1.trrsf.com/update-1698692222/fe/zaz-mod-t360-icons/svg/logos/terra-16x9-borda.png",
+            "publishedAt": "2025-09-12T14:21:01Z",
+            "content": "O Ibovespa hesitava nesta sexta-feira refletindo movimentos de realização de lucros, após renovar máximas na véspera, e uma certa cautela à declaração do secretário de Estado dos Estados Unidos de qu… [+3011 chars]"
         },
         {
             "source": {
@@ -566,19 +605,6 @@
                 "id": null,
                 "name": "Abril.com.br"
             },
-            "author": "Carolina Ferraz",
-            "title": "Ibovespa atinge 145 mil pontos na abertura com forte alta de aéreas e bancos",
-            "description": "Gol e Azul sobem na abertura após desistência de fusão entre as companhias",
-            "url": "https://veja.abril.com.br/economia/ibovespa-atinge-145-mil-pontos-na-abertura-com-forte-alta-de-aereas-e-bancos/",
-            "urlToImage": "https://veja.abril.com.br/wp-content/uploads/2016/06/bovespa-economia-sao-paulo-20130109-23-original.jpeg?quality=70&strip=info&resize=1080,565&crop=1",
-            "publishedAt": "2025-09-26T14:37:50Z",
-            "content": "ASSINE VEJA NEGÓCIOSIbovespa é principal índice da Bolsa de Valores de São Paulo (BM&amp;F Bovespa) (Reinaldo Canato/VEJA)\r\nContinua após publicidade\r\nO Ibovespa iniciou a manhã desta sexta-feira (26… [+2806 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Abril.com.br"
-            },
             "author": "Juliana Elias",
             "title": "Ibovespa cai após bater recorde, dólar recua e fica abaixo de R$ 5,40",
             "description": "Incertezas políticas após condenação do ex-presidente Jair Bolsonaro pesam sobre as negociações do mercado doméstico nesta sexta-feira",
@@ -599,6 +625,19 @@
             "urlToImage": "https://veja.abril.com.br/wp-content/uploads/2025/08/08c9-cac2-4a80-b59c-377a3f4c676d-1.jpg?quality=70&strip=info&resize=1080,565&crop=1",
             "publishedAt": "2025-09-18T17:32:34Z",
             "content": "ASSINE VEJA NEGÓCIOS\r\nSilvio Costa Filho, ministro dos Portos e Aeroportos (Flavio Santana/VEJA)\r\nContinua após publicidade\r\nA construção de um dique flutuante, para reparos e revisão obrigatória de … [+1308 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Abril.com.br"
+            },
+            "author": "Carolina Ferraz",
+            "title": "Ibovespa atinge 145 mil pontos na abertura com forte alta de aéreas e bancos",
+            "description": "Gol e Azul sobem na abertura após desistência de fusão entre as companhias",
+            "url": "https://veja.abril.com.br/economia/ibovespa-atinge-145-mil-pontos-na-abertura-com-forte-alta-de-aereas-e-bancos/",
+            "urlToImage": "https://veja.abril.com.br/wp-content/uploads/2016/06/bovespa-economia-sao-paulo-20130109-23-original.jpeg?quality=70&strip=info&resize=1080,565&crop=1",
+            "publishedAt": "2025-09-26T14:37:50Z",
+            "content": "ASSINE VEJA NEGÓCIOSIbovespa é principal índice da Bolsa de Valores de São Paulo (BM&amp;F Bovespa) (Reinaldo Canato/VEJA)\r\nContinua após publicidade\r\nO Ibovespa iniciou a manhã desta sexta-feira (26… [+2806 chars]"
         },
         {
             "source": {
@@ -826,19 +865,6 @@
                 "id": "info-money",
                 "name": "InfoMoney"
             },
-            "author": "Estadão Conteúdo",
-            "title": "Petrobras vai destinar R$ 21 mi a projetos de combate à crise climática em SP e RS",
-            "description": "Projetos podem ser enviados até dia 27 de outubro\nThe post Petrobras vai destinar R$ 21 mi a projetos de combate à crise climática em SP e RS appeared first on InfoMoney.",
-            "url": "https://www.infomoney.com.br/brasil/petrobras-vai-destinar-r-21-mi-a-projetos-de-combate-a-crise-climatica-em-sp-e-rs/",
-            "urlToImage": "https://www.infomoney.com.br/wp-content/uploads/2025/04/2025-04-07T200133Z_1_LYNXNPEL360WS_RTROPTP_3_PETROBRAS-CHAIRMAN.jpg?quality=70",
-            "publishedAt": "2025-09-10T21:28:18Z",
-            "content": "A Petrobras lançou nesta quarta-feira, 10, um edital para investimento de R$ 21 milhões em projetos socioambientais nos estados de São Paulo e Rio Grande do Sul. O foco é em ações de mitigação, adapt… [+1293 chars]"
-        },
-        {
-            "source": {
-                "id": "info-money",
-                "name": "InfoMoney"
-            },
             "author": "Felipe Moreira",
             "title": "Petrobras: BBI vê alta de 57% em dólar para PETR4 com mudança de governo",
             "description": "Em cenário de mudança política, BBI ainda prevê um dividend yield de 12% por pelo menos cinco anos\nThe post Petrobras: BBI vê alta de 57% em dólar para PETR4 com mudança de governo appeared first on InfoMoney.",
@@ -846,6 +872,19 @@
             "urlToImage": "https://www.infomoney.com.br/wp-content/uploads/2025/08/Captura-de-tela-2025-08-15-120820.png?quality=70",
             "publishedAt": "2025-09-24T18:38:16Z",
             "content": "© 2000-2025 InfoMoney. Todos os direitos reservados.\r\n O InfoMoney preza a qualidade da informação e atesta a apuração de todo o conteúdo produzido por sua\r\n equipe,\r\n ressaltando, no entanto, que nã… [+1238 chars]"
+        },
+        {
+            "source": {
+                "id": "info-money",
+                "name": "InfoMoney"
+            },
+            "author": "Estadão Conteúdo",
+            "title": "Petrobras vai destinar R$ 21 mi a projetos de combate à crise climática em SP e RS",
+            "description": "Projetos podem ser enviados até dia 27 de outubro\nThe post Petrobras vai destinar R$ 21 mi a projetos de combate à crise climática em SP e RS appeared first on InfoMoney.",
+            "url": "https://www.infomoney.com.br/brasil/petrobras-vai-destinar-r-21-mi-a-projetos-de-combate-a-crise-climatica-em-sp-e-rs/",
+            "urlToImage": "https://www.infomoney.com.br/wp-content/uploads/2025/04/2025-04-07T200133Z_1_LYNXNPEL360WS_RTROPTP_3_PETROBRAS-CHAIRMAN.jpg?quality=70",
+            "publishedAt": "2025-09-10T21:28:18Z",
+            "content": "A Petrobras lançou nesta quarta-feira, 10, um edital para investimento de R$ 21 milhões em projetos socioambientais nos estados de São Paulo e Rio Grande do Sul. O foco é em ações de mitigação, adapt… [+1293 chars]"
         },
         {
             "source": {
@@ -1223,58 +1262,6 @@
             "urlToImage": "https://www.infomoney.com.br/wp-content/uploads/2025/07/2025-07-30T200901Z_1_LYNXMPEL6T154_RTROPTP_4_ENERGIA-TRUMP-PETROLEO-BRASIL.jpg?quality=70",
             "publishedAt": "2025-09-10T15:36:37Z",
             "content": "A Petrobras (PETR3; PETR4) vai divulgar, em novembro, seu plano de negócios para 2026-2030, com uma meta de US$ 8 bilhões em redução de custos ao longo de cinco anos, segundo informações do Valor Eco… [+4040 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Expresso.pt"
-            },
-            "author": "Bárbara Silva",
-            "title": "Galp de olho no petróleo de São Tomé, compra 27,5% do Bloco 4 à britânica Shell",
-            "description": "Em São Tomé, a Galp detém atualmente participações em três blocos de exploração petrolífera na Bacia do Rio Muni, em águas ultraprofundas ao largo do país, onde está presente desde 2015",
-            "url": "https://expresso.pt/economia/economia_energia/2025-09-12-galp-de-olho-no-petroleo-de-sao-tome-compra-275-do-bloco-4-a-britanica-shell-2dfe2f5f",
-            "urlToImage": "https://images.impresa.pt/expresso/2025-09-03-fox_galp_0004_t-_idp.jpg-45a16f02/1.91x1?wm=true&outputFormat=jpeg",
-            "publishedAt": "2025-09-12T17:24:03Z",
-            "content": "A Galp anunciou esta sexta-feira a celebração de um acordo com a empresa KE STP Company - que pertence ao universo da Shell desde finais de 2022 e está registada nas Ilhas Caimão - para a aquisição d… [+2967 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Metropoles.com"
-            },
-            "author": "Fábio Matos",
-            "title": "Cade aprova possível venda da Braskem a fundo de Tanure. Ação sobe",
-            "description": "Por volta das 12h25 (pelo horário de Brasília), as ações da Braskem negociadas na Bolsa de Valores (B3) avançavam 4,72%, cotadas a R$ 6,88",
-            "url": "https://www.metropoles.com/negocios/cade-aprova-possivel-venda-da-braskem-a-fundo-de-tanure-acao-sobe",
-            "urlToImage": "https://uploads.metroimg.com/wp-content/uploads/2025/05/24112501/braskem-10.jpg",
-            "publishedAt": "2025-10-01T15:47:42Z",
-            "content": "O Conselho Administrativo de Defesa Econômica (Cade) aprovou, por unanimidade e sem restrições, a possível venda da NSP Investimentos subsidiária da Novonor (antiga Odebrecht) que controla a Braskem … [+1853 chars]"
-        },
-        {
-            "source": {
-                "id": "info-money",
-                "name": "InfoMoney"
-            },
-            "author": "lucasgmarins",
-            "title": "Petrobras: quanto vai pagar em dividendos até o final do ano? Vale investir já?",
-            "description": "Fatores como preço do petróleo, capex e política definem o tamanho dos dividendos da gigante brasileira\nThe post Petrobras: quanto vai pagar em dividendos até o final do ano? Vale investir já? appeared first on InfoMoney.",
-            "url": "https://www.infomoney.com.br/onde-investir/petrobras-quanto-vai-pagar-em-dividendos-ate-o-final-do-ano-vale-investir-ja/",
-            "urlToImage": "https://www.infomoney.com.br/wp-content/uploads/2025/04/2025-04-07T200133Z_1_LYNXNPEL360WS_RTROPTP_3_PETROBRAS-CHAIRMAN.jpg?fit=800%2C499&quality=70&strip=all",
-            "publishedAt": "2025-10-01T08:00:00Z",
-            "content": "A Petrobras (PETR4) sofre pressão de todos os lados e isso já afetou a distribuição de dividendos em 2025, além de poder redefinir a trajetória de pagamentos nos próximos anos. De um lado, a queda do… [+5244 chars]"
-        },
-        {
-            "source": {
-                "id": "info-money",
-                "name": "InfoMoney"
-            },
-            "author": "leonardogstos",
-            "title": "De Itaú a Petrobras: veja as ações mais recomendadas para investir em outubro",
-            "description": "Quatro ações que integraram a lista em setembro deixaram a carteira, que tem os papéis mais pesados do Ibovespa\nThe post De Itaú a Petrobras: veja as ações mais recomendadas para investir em outubro  appeared first on InfoMoney.",
-            "url": "https://www.infomoney.com.br/onde-investir/de-itau-a-petrobras-veja-as-acoes-mais-recomendadas-para-investir-em-outubro/",
-            "urlToImage": "https://www.infomoney.com.br/wp-content/uploads/2025/05/Itau_Logo.jpg?fit=1920%2C1280&quality=70&strip=all",
-            "publishedAt": "2025-10-02T08:00:00Z",
-            "content": "Mesmo com o Ibovespa operando perto das máximas, os especialistas seguem confiantes com a Bolsa no curto prazo. Nesse cenário, apesar das valorizações recentes, ainda há papéis considerados descontad… [+3530 chars]"
         }
     ]
 }
