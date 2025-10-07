@@ -5,7 +5,6 @@ URL e para extrair o texto limpo de um artigo HTML usando BeautifulSoup."""
 
 import asyncio
 import aiohttp
-from asyncio import TaskGroup
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 
