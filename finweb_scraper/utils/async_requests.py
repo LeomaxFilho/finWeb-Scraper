@@ -25,9 +25,9 @@ Notes
   `fetch_url`; callers receive the literal string "Error" for failed fetches.
 """
 
-import asyncio
 import aiohttp
 from bs4 import BeautifulSoup
+from tqdm.asyncio import tqdm_asyncio
 from tqdm import tqdm
 
 COLUMN_NUMBERS = 100
@@ -59,7 +59,7 @@ async def articles_fetch(urls: list[str]) -> list[str]:
     """
 
     async with aiohttp.ClientSession() as session:
-        articles = await asyncio.gather(
+        articles = await tqdm_asyncio.gather(
             *[fetch_url(article, session) for article in urls]
         )
 
@@ -97,15 +97,19 @@ async def fetch_url(url: str, session: aiohttp.ClientSession) -> str:
             response = await request.text()
 
     except aiohttp.ClientResponseError as ex:
-        print(f"\033[91m Response Error URL: {ex}\033[0m")
+        tqdm.write(f"\033[91m Response Error URL: {ex}\033[0m")
         return "Error"
 
     except aiohttp.InvalidURL as ex:
-        print(f"\033[91m Invalid URL: {ex}\033[0m")
+        tqdm.write(f"\033[91m Invalid URL: {ex}\033[0m")
+        return "Error"
+
+    except aiohttp.ConnectionTimeoutError as ex:
+        tqdm.write(f"\033[91m Timeout Error: {ex}\033[0m")
         return "Error"
 
     except aiohttp.ClientError as ex:
-        print(f"\033[91m Client Error: {ex}\033[0m")
+        tqdm.write(f"\033[91m Client Error: {ex}\033[0m")
         return "Error"
 
     return response
@@ -128,7 +132,7 @@ async def soup_articles_fetch(articles: list[str]) -> list[str]:
         input `articles`.
     """
 
-    articles_without_blank_spaces = await asyncio.gather(
+    articles_without_blank_spaces = await tqdm_asyncio.gather(
         *[soup_articles_html(article) for article in articles]
     )
 
@@ -152,9 +156,11 @@ async def soup_articles_html(article: str) -> str:
     Example:
         >>> import asyncio
         >>> text = asyncio.run(soup_articles_html('<html><body>Hi\nthere</body></html>'))
-        >>> print(text)
+        >>> tqdm.write(text)
         'Hithere'
     """
+
     soup = BeautifulSoup(article, "html.parser")
     soup_without_blank_lines = "".join(soup.text.splitlines())
+
     return soup_without_blank_lines

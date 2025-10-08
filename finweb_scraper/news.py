@@ -58,8 +58,10 @@ if __name__ == "__main__":
         print(f"\033[91m error: {ex}\033[0m")
         sys.exit()
 
+    tqdm.write("\nFethcing urls")
     articles = asyncio.run(articles_fetch(urlList))
 
+    tqdm.write("\nSouping articles")
     articlesSoup = asyncio.run(soup_articles_fetch(articles))
 
     with open("../out/articles.json", "w", encoding="utf-8") as file:
