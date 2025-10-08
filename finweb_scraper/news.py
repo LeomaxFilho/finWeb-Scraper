@@ -60,7 +60,6 @@ if __name__ == "__main__":
 
     articles = asyncio.run(articles_fetch(urlList))
 
-    tqdm.write("\nSouping articles...")
     articlesSoup = asyncio.run(soup_articles_fetch(articles))
 
     with open("../out/articles.json", "w", encoding="utf-8") as file:
