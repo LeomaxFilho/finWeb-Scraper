@@ -18,7 +18,7 @@ Exemplo de uso:
 """
 
 # import fetch_url
-from finweb_scraper.utils.async_requests import fetch_url
+from finweb_scraper.utils.async_requests import articles_fetch
 
 # import soup_articles_html
 from finweb_scraper.utils.async_requests import soup_articles_html
