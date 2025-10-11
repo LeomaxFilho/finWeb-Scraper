@@ -22,6 +22,7 @@ if __name__ == '__main__':
     load_dotenv()
 
     API_NEWSAPI = os.getenv('API_NEWSAPI')
+    API_OPEN_AI = os.getenv('API_OPENAI')
     URL_NEWSAPI = 'https://newsapi.org/v2/everything'
     URL_OLLAMA = 'http://localhost:11434/api/generate'
     OLLA_MODEL = 'llama3.2:latest'

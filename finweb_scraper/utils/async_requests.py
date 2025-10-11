@@ -164,3 +164,53 @@ async def soup_articles_html(article: str) -> str:
     soup_without_blank_lines = ''.join(soup.text.splitlines())
 
     return soup_without_blank_lines
+
+async def open_ai_data_processing(article: str, api_key: str, session: aiohttp.ClientSession)-> str:
+    """Data processing wuth chat gpt"""
+    url = 'https://api.openai.com/v1/responses'
+    header = {
+        'Authorization' : f'Bearer {api_key}',
+        "Content-Type": "application/json"
+    }
+
+    param = {
+        'model': 'gpt-5-nano',
+        'message' : f'''Devolver o texto da notícia em primeiro lugar, mantendo todas as
+        informações originais, sem modificar nenhuma vírgula ou característica do
+        original. Não fornecer resumo, interpretação alguma, também preste atenção na
+        questão das propagandas, para retirar propagandas e a marca,
+        como VEJA, ABRIL, Olha Digital e por assim vai.
+        Segue texto com o artigo: {article}'''
+    }
+
+    try:
+        async with session.post(url=url, json=param, headers=header, timeout=15) as request:
+            request.raise_for_status()
+            response = await request.json()
+
+    except aiohttp.ClientResponseError as ex:
+        tqdm.write(f'\033[91m Response Error URL: {ex}\033[0m')
+        return 'Error'
+
+    except aiohttp.InvalidURL as ex:
+        tqdm.write(f'\033[91m Invalid URL: {ex}\033[0m')
+        return 'Error'
+
+    except aiohttp.ConnectionTimeoutError as ex:
+        tqdm.write(f'\033[91m Timeout Error: {ex}\033[0m')
+        return 'Error'
+
+    except aiohttp.ClientError as ex:
+        tqdm.write(f'\033[91m Client Error: {ex}\033[0m')
+        return 'Error'
+
+    return response['output']['content'][0]['text']
+
+async def open_ai_data_fetch(articles: list[str], api_key: str) -> list[str]:
+    """fetch function for async requests"""
+    async with aiohttp.ClientSession() as session:
+        article_processed = tqdm_asyncio.gather(
+            *[open_ai_data_processing(article, api_key, session) for article in articles]
+        )
+
+    return article_processed
