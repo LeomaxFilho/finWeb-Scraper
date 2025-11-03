@@ -26,7 +26,7 @@ if __name__ == '__main__':
     URL_OLLAMA = 'http://localhost:11434/api/generate'
     OLLA_MODEL = 'llama3.2:latest'
 
-    paramNewsAPI = {
+    PARAM_NEWSAPI = {
         'apiKey': API_NEWSAPI,
         'q': 'Petrobras',
         'searchIn': 'title,content',
@@ -34,7 +34,7 @@ if __name__ == '__main__':
     }
 
     try:
-        response = requests.get(url=URL_NEWSAPI, params=paramNewsAPI, timeout=120)
+        response = requests.get(url=URL_NEWSAPI, params=PARAM_NEWSAPI, timeout=120)
         response.raise_for_status()
         apiData = response.json()
 
