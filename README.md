@@ -7,15 +7,6 @@ Stock Market web scraper — a lightweight pipeline to harvest news articles, cl
 
 This project queries NewsAPI for news about a topic, downloads the article HTML pages, extracts the article text using BeautifulSoup, and can forward the cleaned text to a local Ollama API for additional processing. It is intended as a simple, local-first scraper for building data pipelines around financial news.
 
-## Project metadata
-
-- Name: finweb-scraper
-- Version: 0.1.0
-- Description: Stock Market web scraper
-- Authors: LeomaxFilho <leomax.filho@gmail.com>
-- License: MIT
-- Python: >=3.11
-
 ## Dependencies
 
 The project declares the following runtime dependencies (as in `pyproject.toml`):
